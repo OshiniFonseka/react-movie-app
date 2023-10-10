@@ -10,6 +10,7 @@ import './App.css';
 
 const API_URL = 'http://www.omdbapi.com?apikey=57dbe635';
 
+//main app component
 const App = () => {
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -25,6 +26,7 @@ const App = () => {
         setMovies(data.Search);
     };
 
+    //UI of the app component
     return (
         <div className="app">
             <h1>YourTheater</h1>
